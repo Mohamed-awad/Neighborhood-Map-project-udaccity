@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>google map</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class ="container">
+		<div class="options-box">
+			<h1>Locations</h1>
+			<div>
+				<input id="filter-text" type="text" data-bind="textInput: filterLocation">
+				<input id="filter" type="button" value="Filter" data-bind="click: checkToFilter">
+				<br>
+				<ul data-bind="foreach:list_locations">
+					<li data-bind="text: name, visible: visible, click: activemarker"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="map">there are an error loading google map</div>
+	</div>
+	<script src="js/app.js"></script>
+	<script type='text/javascript' src="js/knockout-3.4.2.js"></script>
+	<script src='js/jquery-1.12.0.min.js'></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGJMvnSgyusBgoFBvic3e5iMmrLlC0Rpc&v=3&callback=initMapForViewModel"
+	 onerror="Handle_error()"></script>
+</body>
+</html>
