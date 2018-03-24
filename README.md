@@ -24,8 +24,3 @@ The neighborhood map application is complex enough and incorporates a variety of
 
 * type the name of location in the search bar on the top of page
 * the list menu will filter automatic 
-
-
-# That`s It Cool
-
-
