@@ -12,8 +12,37 @@ body {
 	display: flex;
 }
 
-input {
+#filter-text {
+	width: 60%;
 	font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  border-radius: 10px;
+  margin-left: 10%;
+}
+
+#filter {
+	font-size: 18px;
+	background-color: #ffa500;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+  padding: 10px;
+}
+
+li {
+	cursor: pointer;
+	border: none;
+	background-color: #ffa500;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+	font-size: 18px;
+	width: 80%;
 }
 
 h1 {
@@ -26,7 +55,7 @@ h1 {
 #map {
 	order: 2;
 	flex-grow: 7;
-	height: 1500px;
+	height: 750px;
 }
 
 .options-box {
@@ -38,9 +67,8 @@ h1 {
 
 @media only screen and (max-width : 700px)  {
 
-.container {
-	flex-direction: column;
-}
-
-
+	.container {
+		flex-direction: column;
+		height:1000px;
+	}
 }
